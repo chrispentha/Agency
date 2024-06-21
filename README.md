@@ -38,9 +38,11 @@ The project includes functionalities for managing off days and limiting the numb
 1. **Clone the Repository**:
    ```sh
    git clone https://github.com/yourusername/appointment-booking-system.git
-   cd appointment-booking-system```
+   cd appointment-booking-system
+   ```
 
 2. **Project Structure**:
+   ```
    AppointmentBookingSystem
    │
    ├── AgencyAPI
@@ -69,34 +71,35 @@ The project includes functionalities for managing off days and limiting the numb
    │   └── AppointmentsControllerTests.cs
    │
    └── AgencyAPI.sln
-
-
+   ```
 
 3. **Setup SQL Server Database**:
    - Ensure SQL Server is running.
    - Update the connection string in `appsettings.json`
-     ```{
+     ```
+		{
 		  "ConnectionStrings": {
 			"DefaultConnection": "Server=your_server_name;Database=AppointmentDb;Trusted_Connection=True;MultipleActiveResultSets=true"
 		  }
-		}```
+		}
+	 ```
 
 4. **Apply Migration**
-   - Open a terminal in the project directory and run:
-		dotnet ef migrations add InitialMigration
-		dotnet ef database update
+   a. Open a terminal in the project directory and run:
+	  - dotnet ef migrations add InitialMigration
+	  - dotnet ef database update
 
 5. **Running the Application**
-	- Build and Run:
-		1. Open the solution in Visual Studio.
-		2. Set AgencyAPI as the startup project.
-		3. Press F5 to build and run the application.
-	- Running the Unit Tests:
-		1. Open the Test Explorer in Visual Studio (Test -> Test Explorer).
-		2. Click Run All to run all the unit tests.
-	- API Documentation:
-		1. Swagger is integrated for API documentation.
-		2. Once the application is running, navigate to https://localhost:5001/swagger 
+   a. Build and Run:
+		- Open the solution in Visual Studio.
+		- Set AgencyAPI as the startup project.
+		- Press F5 to build and run the application.
+   b. Running the Unit Tests:
+		- Open the Test Explorer in Visual Studio (Test -> Test Explorer).
+		- Click Run All to run all the unit tests.
+   c. API Documentation:
+		- Swagger is integrated for API documentation.
+		- Once the application is running, navigate to https://localhost:5001/swagger 
 		   to view and interact with the API documentation.
 		   
 ## Additional Notes
