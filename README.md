@@ -14,9 +14,9 @@ The project includes functionalities for managing off days and limiting the numb
 - **Swagger** (for API documentation)
 - **GitHub** (for source control)
 
-## Tool Not Used
-- **Autofac** (for Dependency Injection), Because using Dependency Injection from .NET: AddScoped()
-- **Azure** (for cloud hosting), Because getting stuck when sign up, I didn't know why
+## Tools Not Used
+- **Autofac** (for Dependency Injection): because using AddScoped() Dependency Injection from .NET
+- **Azure** (for cloud hosting): because getting stuck when sign up, I didn't know why. So sorry for that.
 
 ## Features
 
@@ -85,21 +85,21 @@ The project includes functionalities for managing off days and limiting the numb
 	 ```
 
 4. **Apply Migration**
-   a. Open a terminal in the project directory and run:
-	  - dotnet ef migrations add InitialMigration
-	  - dotnet ef database update
+   - Open a terminal in the project directory and run:
+	  1. dotnet ef migrations add InitialMigration
+	  2. dotnet ef database update
 
 5. **Running the Application**
-   a. Build and Run:
-		- Open the solution in Visual Studio.
-		- Set AgencyAPI as the startup project.
-		- Press F5 to build and run the application.
-   b. Running the Unit Tests:
-		- Open the Test Explorer in Visual Studio (Test -> Test Explorer).
-		- Click Run All to run all the unit tests.
-   c. API Documentation:
-		- Swagger is integrated for API documentation.
-		- Once the application is running, navigate to https://localhost:5001/swagger 
+   - Build and Run:
+		1. Open the solution in Visual Studio.
+		2. Set AgencyAPI as the startup project.
+		3. Press F5 to build and run the application.
+   - Running the Unit Tests:
+		1. Open the Test Explorer in Visual Studio (Test -> Test Explorer).
+		2. Click Run All to run all the unit tests.
+   - API Documentation:
+		1. Swagger is integrated for API documentation.
+		2. Once the application is running, navigate to https://localhost:5001/swagger 
 		   to view and interact with the API documentation.
 		   
 ## Additional Notes
